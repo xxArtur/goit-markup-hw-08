@@ -1,0 +1,42 @@
+.works {
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.works__title {
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.works__list {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+
+.works__name {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.works__name p {
+  padding: 27px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
