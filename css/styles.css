@@ -591,6 +591,14 @@ summary {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+@media (max-width: 480px) {
+  .feature__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .specifics {
   padding-top: 30px;

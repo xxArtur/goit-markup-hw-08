@@ -16,6 +16,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  
+      @include for-phone {
+        flex-direction: column;
+      }
 }
 
 .specifics {
