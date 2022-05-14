@@ -1,6 +1,27 @@
 .footer {
+
   background-color: var(--background-color-wan);
-  padding: 60px 0 50px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+ 
+}
+
+.logotip {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+
+    // @media screen and (max-width: 767px) {
+    //     width: calc((100% - 2* 30px) / 2);
+    //     margin: 15px;
+    //   }
+    
+      @media screen and (min-width: 1200px) {
+      display: flex;
+      }
 }
 
 .footer__logo--color {
@@ -15,11 +36,14 @@
 .footer__address {
   color: var(--primary-white-color);
   display: block;
+  @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+ 
 }
 
 .address {
   padding-top: 20px;
-  
 }
 
 .info {
@@ -44,23 +68,60 @@
 }
 
 .footer__container {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: block;
+    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+        }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    }
 }
 
 .social {
   padding-left: 70px;
 }
 
+
+.social__title {
+  color: var(--primary-white-color);
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+@media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
 .social__list {
   display: flex;
-  align-items: center;
-  position: relative;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
 }
-
+   @media screen and (mmin-width: 1200px) {
+   display: flex;
+          margin-top: 10px;
+     
+}
+}
 .social__item {
-  display: flex;
-  justify-content: center;
-  padding-right: 10px;
+  @media screen and (min-width: 480px) {
+      display: block;
+      text-align: center;
+    }
+     @media screen and (min-width: 1200px) {
+          display: flex;
+          justify-content: center;
+          padding-right: 10px;
+      }
+ 
 }
 
 .social__link {
@@ -96,21 +157,7 @@
   fill: var(--primary-white-color);
 }
 
-.social__list {
-  display: inline-flex;
-  margin-top: 10px;
-}
 
-.social__title {
-  color: var(--primary-white-color);
-  margin-top: 12px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
 
 
 /* activ */
@@ -120,7 +167,7 @@
 }
 
 .subscription__title {
-  display: flex;
+  // display: flex;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -133,7 +180,11 @@
 }
 
 .subscription__mailing {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+      display: flex;
+
+    }
+
 }
 
 .subscription__input {

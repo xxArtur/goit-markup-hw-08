@@ -1,25 +1,66 @@
 .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
 }
 
 .feature__title {
   visibility: hidden;
   margin-bottom: -30px;
+  
 }
 
 .feature__list {
-  display: flex;
+    
+  @media screen and (min-width: 480px) {
+    display: block;
+
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.feature__list--title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.feature__item {
   
-      @include for-phone {
-        flex-direction: column;
-      }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 30px;
+    }
+  
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 5 * 30px) / 4);
+    margin: 15px;
+  }
 }
 
 .specifics {
@@ -27,8 +68,6 @@
 }
 
 .feature__icon {
-  width: 270px;
-  height: 120px;
   background: var(--backgroynd-color-two);
   border: 1px solid var(--backgroynd-color-two);
   border-radius: 4px;
@@ -42,11 +81,19 @@
         border-color: var(--accent-color);
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-}
 
-.feature__item:not(:last-child) {
-  padding-right: 30px;
-  padding-bottom: 10px;
+    @media screen and (min-width: 480px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }  
+    @media screen and (min-width: 768px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 120px;
+  }
 }
 
 .feature__text {
@@ -57,4 +104,5 @@
   line-height: 1.71;
   color: var(--text-color);
   text-transform: none;
+ 
 }
