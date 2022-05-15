@@ -851,13 +851,13 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .comanda__item {
-    width: calc((100% - 90px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .comanda__item {
-    width: calc((100% - 150px) / 4);
+    width: calc((100% - 120px) / 4);
     margin: 15px;
   }
 }
@@ -880,6 +880,11 @@ summary {
   line-height: 1.19;
   margin-bottom: 10px;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .comanda__name {
+    padding-top: 30px;
+  }
 }
 
 .p-name {
@@ -1016,6 +1021,17 @@ summary {
   color: var(--backgroynd-color-two);
 }
 
+@media screen and (min-width: 767px) {
+  .footer__pozition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /* address */
 .footer__address {
   color: var(--primary-white-color);
@@ -1061,9 +1077,7 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1097,12 +1111,12 @@ summary {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .social__title {
     display: block;
     text-align: center;
-    padding-bottom: 20px;
   }
 }
 
@@ -1111,7 +1125,12 @@ summary {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .social__list {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .social__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1124,13 +1143,14 @@ summary {
             justify-content: center;
   }
 }
-@media screen and (mmin-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .social__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 12px;
-    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1196,6 +1216,11 @@ summary {
     padding-top: 60px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media scren and (min-width: 768px) {
+  .activ-menu {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1665,6 +1690,17 @@ summary {
   color: var(--backgroynd-color-two);
 }
 
+@media screen and (min-width: 767px) {
+  .footer__pozition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /* address */
 .footer__address {
   color: var(--primary-white-color);
@@ -1710,9 +1746,7 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1746,12 +1780,12 @@ summary {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .social__title {
     display: block;
     text-align: center;
-    padding-bottom: 20px;
   }
 }
 
@@ -1760,7 +1794,12 @@ summary {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .social__list {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (max-width: 1199px) {
   .social__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1773,13 +1812,14 @@ summary {
             justify-content: center;
   }
 }
-@media screen and (mmin-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .social__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 12px;
-    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1845,6 +1885,11 @@ summary {
     padding-top: 60px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media scren and (min-width: 768px) {
+  .activ-menu {
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
