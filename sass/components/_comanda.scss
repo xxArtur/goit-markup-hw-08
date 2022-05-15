@@ -66,7 +66,12 @@
 
 
 .name-container {
+  @media screen and (max-width: 767px) {
+  padding: 30px 0 24px 0;
+  }
+  @media screen and (min-width: 1200px) {
   padding: 30px 0;
+  }
 }
 
 .comanda__name {
@@ -84,6 +89,7 @@
   font-size: 16px;
   line-height: 1.19;
   color: var(--text-color);
+  padding-bottom: 16px;
 }
 
 .social__icons {
