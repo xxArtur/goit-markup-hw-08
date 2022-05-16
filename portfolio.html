@@ -15,36 +15,38 @@
         <div class="header-inner">
           <nav class="page-header__nav">
             <a href="" class="logo"><span class="logo-color">Web</span>Studio</a>
-            <ul class="page-header__list">
-              <li class="page-header__item">
-                <a class="page-header__link" href="./index.html">Студия</a>
-              </li>
-              <li class="page-header__item">
-                <a class="page-header__link page-header__link--active" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="page-header__item">
-                <a class="page-header__link" href="">Контакты</a>
-              </li>
-            </ul>
+            <div class="page-header__menu" id="page-header__menu" data-menu>
+              <ul class="page-header__list page-header__list--nav">
+                <li class="page-header__item">
+                  <a class="page-header__link" href="./index.html">Студия</a>
+                </li>
+                <li class="page-header__item">
+                  <a class="page-header__link page-header__link--active" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="page-header__item">
+                  <a class="page-header__link" href="">Контакты</a>
+                </li>
+              </ul>
+              <ul class="page-header__list page-header__list--contact">
+                <li class="page-header__item">
+                  <a href="mailto:info@devstudio.com" class="button page-header__link">
+                    <svg class="page-header__icon--mail">
+                      <use href="./images/sprite.svg#iconenvelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="page-header__item">
+                  <a href="tel:+380961111111" class="button page-header__link">
+                    <svg class="page-header__icon--tell">
+                      <use href="./images/sprite.svg#iconsmartphone"></use>
+                    </svg>
+                    +38(096)111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
-          <ul class="page-header__nav page-header__nav--list">
-            <li class="page-header__item">
-              <a href="mailto:info@devstudio.com" class="button primary page-header__link">
-                <svg class="page-header__icon--mail">
-                  <use href="./images/sprite.svg#iconenvelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="page-header__item">
-              <a href="tel:+380961111111" class="button page-header__link">
-                <svg class="page-header__icon--tell">
-                  <use href="./images/sprite.svg#iconsmartphone"></use>
-                </svg>
-                +38(096)111 11 11
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
@@ -220,47 +222,49 @@
     <footer class="footer">
       <div class="container footer__container">
         <!--address-->
-        <div>
-          <a href="" class="footer__logo logo"><span class="footer__logo--color ">Web</span>Studio</a>
-          <div class="address">
-            <p class="info address__street">г. Киев, пр-т Леси Украинки, 26</p>
-            <p class="info address__contact">info@devstudio.com</p>
-            <p class="info address__contact">+38(096)111 11 11</p>
+        <div class="footer__pozition">
+          <div class="footer__address">
+            <a href="" class="footer__logo logotip"><span class="footer__logo--color ">Web</span>Studio</a>
+            <div class="address">
+              <p class="info address__street">г. Киев, пр-т Леси Украинки, 26</p>
+              <p class="info address__contact">info@devstudio.com</p>
+              <p class="info address__contact">+38(096)111 11 11</p>
+            </div>
           </div>
-        </div>
-        <!-- social -->
-        <div class="social">
-          <h3 class="social__title">присоединяйтесь</h3>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#iconinstagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#icontwitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#iconfacebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#iconlinkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <!-- social -->
+          <div class="social">
+            <h3 class="social__title">присоединяйтесь</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#iconinstagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#icontwitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#iconfacebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./images/sprite.svg#iconlinkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- activ -->
         <div class="activ-menu">
