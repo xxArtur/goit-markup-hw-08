@@ -1,14 +1,30 @@
 /* Меню */
 
 .menu {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  @media screen and (max-width: 767px) {
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+
 }
 
 .menu__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content:baseline;
 
+}
+
+.menu__items--padding {
+  padding-right: 103px;
 }
 
 .menu__items {
@@ -18,6 +34,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  @media screen and (max-width: 767px){
+    margin-top: 15px;
+  }
 }
 
 .menu__button {
