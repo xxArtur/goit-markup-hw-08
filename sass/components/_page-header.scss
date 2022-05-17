@@ -38,6 +38,32 @@ line-height: 1.17;
 .logo-color {
   color: var(--accent-color);
 }
+.button__logo {
+@media screen and (miax-width: 768px) {
+  display: none;
+display: inline-flex;
+margin: 0;
+padding: 0;
+border: none;
+background-color: transparent;
+}
+}
+
+.button__logo .icon-cross {
+  display: none;
+}
+
+.button__logo.is-open .icon-cross {
+  display: block;
+}
+
+.button__logo.is-open .icon-menu {
+  display: block;
+}
+
+.icon-cross {
+  display: none;
+}
 
 .page-header__list {
   display: flex;
