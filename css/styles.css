@@ -589,7 +589,6 @@ summary {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header__list--contact {
     display: block;
-    padding-top: 21px;
     margin-left: 84px;
   }
 }
