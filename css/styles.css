@@ -471,6 +471,14 @@ summary {
   display: none;
 }
 
+.button__logo:hover:focus .icon-menu {
+  fill: #2196F3;
+}
+
+.button__logo:hover:focus .icon-cross {
+  fill: #2196F3;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__link--mail {
     font-size: 24px;
@@ -483,6 +491,12 @@ summary {
     font-size: 34px;
     line-height: 1.176;
     padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__link--tell {
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
@@ -624,7 +638,10 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .page-header__list--contact {
-    margin-left: 305px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 280px;
     padding-top: 32px;
   }
 }

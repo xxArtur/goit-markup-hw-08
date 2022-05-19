@@ -107,23 +107,35 @@ line-height: 1.17;
 .button__logo .icon-menu {
   display: block;
 }
+
 .button__logo.is-hidden .icon-menu {
   display: none;
 }
 
+.button__logo:hover:focus .icon-menu {
+    fill:#2196F3;
+  }
+
+.button__logo:hover:focus .icon-cross {
+  fill:#2196F3;
+  }
 
 .page-header__link--mail {
   @media screen and (max-width: 767px) {
   font-size: 24px;
   line-height: 1.166;
 }
-}
 
+}
 .page-header__link--tell {
   @media screen and (max-width: 767px) {
   font-size: 34px;
   line-height: 1.176;
   padding-bottom: 32px;
+}
+@media screen and (min-width: 1200px) {
+  font-size: 12px;
+  line-height: 1.16;
 }
 }
 
@@ -229,8 +241,9 @@ z-index: 30;
   margin-left: 84px;
   }
 @media screen and (min-width: 1200px) {
-  margin-left: 305px;
-    padding-top: 32px;
+  display:inline-flex;
+  margin-left: 280px;
+  padding-top: 32px;
   }
 }
 
