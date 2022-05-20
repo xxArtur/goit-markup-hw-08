@@ -103,19 +103,21 @@ line-height: 1.17;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__logo .icon-cross {
+.page-header__menu .icon-cross {
   display: none;
 }
-.button__logo.is-hidden .icon-cross {
+.page-header__menu.is-hidden .icon-cross {
   display: block;
 }
-.button__logo .icon-menu {
+.page-header__menu .icon-menu {
   display: block;
 }
 
-.button__logo.is-hidden .icon-menu {
+.page-header__menu.is-hidden .icon-menu {
   display: none;
 }
+
+
 
 .button__logo:hover:focus .icon-menu {
     fill:#2196F3;
@@ -205,7 +207,7 @@ line-height: 1.17;
 
 
 .page-header__menu.is-hidden {
-  display: block;
+display: block;
 @media screen and (max-width: 767px){
 position: absolute;
 top: 0;
