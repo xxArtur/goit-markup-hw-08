@@ -117,7 +117,14 @@ line-height: 1.17;
   display: none;
 }
 
-
+.menuwka.is-hidden .skrut{
+display: block;
+color: blue;
+}
+.menuwka .skrut {
+  display: block;
+  color: red;
+}
 
 .button__logo:hover:focus .icon-menu {
     fill:#2196F3;
