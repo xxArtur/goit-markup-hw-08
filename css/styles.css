@@ -1935,6 +1935,21 @@ summary {
   color: var(--text-color);
 }
 
+.knopka {
+  background-color: aqua;
+}
+
+.menuwka .is-hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: bisque;
+}
+
+.menuwka {
+  display: none;
+}
+
 /* formu */
 .modal__title {
   display: block;
