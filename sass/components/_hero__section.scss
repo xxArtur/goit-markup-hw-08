@@ -18,7 +18,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("../images/laptop/header-img@x2.jpg");
+        url("../images/laptop/header-img@2x.jpg");
     }
   }
   @media screen and (max-width: 1199px) {
@@ -28,7 +28,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/tablet/Header-img@X2.jpg");
+      url("../images/tablet/Header-img@2x.jpg");
     }
   }
   @media screen and (max-width: 767px) {
@@ -38,7 +38,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/mobile/Header-img@X2.jpg");
+      url("../images/mobile/Header-img@2x.jpg");
     }
   }
 }
