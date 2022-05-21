@@ -11,7 +11,7 @@
   text-align: center;
   position: relative;
   
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/laptop/header-img.jpg");
       @media(min-device-pixel-ratio: 2),
@@ -53,4 +53,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+      line-height: 1.61;
+  }
 }
