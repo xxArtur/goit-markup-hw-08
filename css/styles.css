@@ -457,30 +457,20 @@ summary {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-header__menu .icon-cross {
+.button__logo .icon-cross {
   display: none;
 }
 
-.page-header__menu.is-hidden .icon-cross {
+.button__logo.is-open .icon-cross {
   display: block;
 }
 
-.page-header__menu .icon-menu {
+.button__logo .icon-menu {
   display: block;
 }
 
-.page-header__menu.is-hidden .icon-menu {
+.button__logo.is-open .icon-menu {
   display: none;
-}
-
-.menuwka.is-hidden .skrut {
-  display: block;
-  color: blue;
-}
-
-.menuwka .skrut {
-  display: block;
-  color: red;
 }
 
 .button__logo:hover:focus .icon-menu {
