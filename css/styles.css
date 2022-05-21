@@ -860,6 +860,12 @@ summary {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .backdrop {
