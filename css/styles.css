@@ -643,7 +643,7 @@ summary {
   .page-header__list--nav {
     padding-top: 48px;
     padding-left: 40px;
-    padding-bottom: 302px;
+    padding-bottom: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
