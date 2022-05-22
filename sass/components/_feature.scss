@@ -1,11 +1,12 @@
 .feature {
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
 }
@@ -58,7 +59,7 @@
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 5 * 30px) / 4);
+    width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }
@@ -92,7 +93,7 @@
     }
     @media screen and (min-width: 1200px) {
       width: 270px;
-      height: 120px;
+      
   }
 }
 

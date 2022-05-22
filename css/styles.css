@@ -933,16 +933,16 @@ summary {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .feature {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1004,7 +1004,7 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .feature__item {
-    width: calc((100% - 150px) / 4);
+    width: calc((100% - 120px) / 4);
     margin: 15px;
   }
 }
@@ -1049,7 +1049,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .feature__icon {
     width: 270px;
-    height: 120px;
   }
 }
 
