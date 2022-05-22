@@ -8,10 +8,15 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+    @media screen and (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 1.5;
+}
 }
 
 .form__field {
@@ -96,6 +101,10 @@
   letter-spacing: 0.03em;
   color: #757575;
   padding-left: 12px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+}
 }
 
 .form__link {

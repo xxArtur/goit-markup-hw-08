@@ -12,11 +12,15 @@ display: block;
 .page-header__nav {
   @media screen and (max-width:767px) {
   display: block;
+  position:inherit;
   }
   @media screen and (min-width:768px) {
  display: flex;
   }
+}
 
+.pos {
+  position:inherit;
 }
 
 .logo {
@@ -25,10 +29,9 @@ font-family: Raleway, sans-serif;
 color: var(--title-text-color);
 font-weight: 700;
 line-height: 1.17;
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  padding: 26px 0;
-}
+
 @media screen and (max-width: 1199px) {
+  padding: 26px 0;
   font-size: 24px;
 }
 @media screen and (min-width: 1200px) {
@@ -43,16 +46,36 @@ line-height: 1.17;
 }
 
 .button__logo {
+  position:absolute;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
   padding: 10px 0;
-  z-index: 50;
+  right: 5%;
+  top: 15%;
+  z-index: 30;
 @media screen and (min-width: 768px) {
   display: none;
 }
+}
+
+.button__logos {
+  position: absolute;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding: 10px 0;
+  right: 5%;
+  top: 15%;
+  z-index: 50;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header__link {
@@ -96,6 +119,10 @@ line-height: 1.17;
       font-size: 12px;
       line-height: 1.16;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
 }
 
 .page-header__link:focus .page-header__icon--tell {
@@ -103,10 +130,11 @@ line-height: 1.17;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__logo .icon-cross {
+
+.button__logos .icon-cross {
   display: none;
 }
-.button__logo.is-open .icon-cross {
+.button__logos.is-open .icon-cross {
   display: block;
 }
 .button__logo .icon-menu {
@@ -117,11 +145,18 @@ line-height: 1.17;
   display: none;
 }
 
+
 .button__logo:hover:focus .icon-menu {
-    fill:#2196F3;
+  fill:#2196F3;
+  }
+.button__logo:hover:focus .icon-cross {
+  fill:#2196F3;
   }
 
-.button__logo:hover:focus .icon-cross {
+  .button__logos:hover:focus .icon-menu {
+  fill:#2196F3;
+  }
+.button__logos:hover:focus .icon-cross {
   fill:#2196F3;
   }
 
@@ -225,7 +260,9 @@ z-index: 30;
 
 .page-header__list--nav {
 @media screen and (max-width: 767px) {
-  padding: 48px 0 302px 40px;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 40%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   margin-left: 88px;
@@ -233,7 +270,7 @@ z-index: 30;
   }
 @media screen and (min-width: 1200px) {
   margin-left: 93px;
-    padding-top: 32px;
+  padding-top: 32px;
   }
 }
 

@@ -17,12 +17,18 @@
                 <nav class="page-header__nav">
                   <div class="position">
                     <a href="" class="logo"><span class="logo-color">Web</span>Studio</a>
-                    <button type="button"  class="button__logo" data-mobBtn>
+                    <div class="pos">
+                    <button type="button"  class="button__logo" data-mob-open >
                       <svg width="40" height="40" aria-label="mobile menu switch" >
-                        <use  class="icon-menu" href="./images/sprite.svg#iconmenu_open " data-mob-open></use>
-                        <use class="icon-cross" href="./images/sprite.svg#iconmenu_close" data-mob-close></use>
+                        <use  class="icon-menu" href="./images/sprite.svg#iconmenu_open " ></use>
+                      </svg>
+                      </button>
+                    <button type="button" class="button__logos" data-mob-close data-mobbtn>
+                      <svg width="40" height="40" aria-label="mobile menu switch">
+                        <use class="icon-cross" href="./images/sprite.svg#iconmenu_close"></use>
                       </svg>
                     </button>
+                  </div>
                   </div>
                   <div class="page-header__menu" data-mob>
                     <ul class="page-header__list page-header__list--nav">
@@ -82,8 +88,7 @@
                         <li class="page-header__item-social"> 
                           <a class="social-border" href="">LinkedIn</a></li>
                       </ul>
-                    
-                  </div>
+                    </div>
                 </nav>      
             </div>
         </div>
@@ -93,7 +98,7 @@
 
         <!--Заголовок-->
         <section class="hero__section">
-            <div class="container">
+            <div class="container container__hero">
                 <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="button primary-top" >Заказать услугу</button>
             </div>

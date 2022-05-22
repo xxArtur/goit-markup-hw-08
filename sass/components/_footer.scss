@@ -11,15 +11,9 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--title-text-color);
-
-    // @media screen and (max-width: 767px) {
-    //     width: calc((100% - 2* 30px) / 2);
-    //     margin: 15px;
-    //   }
-    
-      @media screen and (min-width: 1200px) {
-      display: flex;
-      }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__logo--color {
@@ -46,7 +40,11 @@
 
   @media screen and (max-width: 767px) {
       text-align: center;
-  }
+    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    padding-left: 61px;;
+    }
 }
 
 .address {
@@ -93,6 +91,7 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
   margin-top: 5px;
+  padding-left: 165px;
   }
   @media screen and (min-width: 1200px) {
   padding-left: 70px;
@@ -123,7 +122,7 @@
 .social__list {
   display: flex;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 24px;
   }
   @media screen and (max-width: 1199px) {
@@ -137,6 +136,7 @@
 }
 }
 .social__item {
+  padding-right: 10px;
   @media screen and (min-width: 480px) {
     display: block;
     text-align: center;
@@ -144,7 +144,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    padding-right: 10px;
+    
   }
 }
 
