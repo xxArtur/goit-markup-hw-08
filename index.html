@@ -12,84 +12,92 @@
 
     <!--Шапка-->
     <header class="page-header">
-        <div class="container">
-            <div class="header-inner">
-                <nav class="page-header__nav">
-                  <div class="position">
-                    <a href="" class="logo"><span class="logo-color">Web</span>Studio</a>
-                    <button type="button"  class="button__logo" data-mob-open >
-                      <svg width="40" height="40" aria-label="mobile menu switch" >
-                        <use  class="icon-menu" href="./images/sprite.svg#iconmenu_open " ></use>
-                      </svg>
-                      </button>
-                  </div>
-                  <div class="page-header__menu" data-mob>
-                    <ul class="page-header__list page-header__list--nav">
-                        <li class="page-header__item page-header__item--nav">
-                        <a class="page-header__link page-header__link--active" href="./index.html">Студия</a>
-                        </li>
-                        <li class="page-header__item page-header__item--nav">
-                        <a class="page-header__link" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li class="page-header__item page-header__item--nav">
-                        <a class="page-header__link" href="">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="page-header__list page-header__list--contact ">
-                    <li class="page-header__item page-header__item--contact">
-                        <a href="mailto:info@devstudio.com" class="page-header__link page-header__link--mail">
-                            <svg class="page-header__icon--mail">
-                                <use href="./images/sprite.svg#iconenvelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="page-header__item page-header__item--contact">
-                        <a href="tel:+380961111111" class="page-header__link page-header__link--tell">
-                            <svg class="page-header__icon--tell">
-                                <use href="./images/sprite.svg#iconsmartphone"></use>
-                            </svg>
-                            +38(096)111 11 11
-                        </a>
-                    </li>
-                    </ul>
-                    <ul class="page-header__list page-header__list--mobile">
-                      <li class="page-header__item page-header__item--contact">
-                        <a href="tel:+380961111111" class="page-header__link page-header__link--tell">
-                          <svg class="page-header__icon--tell">
-                            <use href="./images/sprite.svg#iconsmartphone"></use>
-                          </svg>
-                          +38(096)111 11 11
-                        </a>
-                      </li>
-                      <li class="page-header__item page-header__item--contact">
-                        <a href="mailto:info@devstudio.com" class="page-header__link page-header__link--mail">
-                          <svg class="page-header__icon--mail">
-                            <use href="./images/sprite.svg#iconenvelope"></use>
-                          </svg>
-                          info@devstudio.com
-                        </a>
-                      </li>
-                      </ul>
-                      <ul class="page-header__list-social">
-                        <li class="page-header__item-social"> 
-                         <a class="social-border" href="">Instagram</a></li>
-                        <li class="page-header__item-social"> 
-                          <a class="social-border" href="">Twitter</a></li>
-                        <li class="page-header__item-social"> 
-                          <a class="social-border" href="">Facebook</a></li>
-                        <li class="page-header__item-social"> 
-                          <a class="social-border" href="">LinkedIn</a></li>
-                      </ul>
-                      <button type="button" class="button__logos" data-mob-close data-mobbtn>
-                      <svg width="40" height="40" aria-label="mobile menu switch">
-                        <use class="icon-cross" href="./images/sprite.svg#iconmenu_close"></use>
-                      </svg>
-                    </button>
-                    </div>
-                </nav>      
+      <div class="container">
+        <div class="header-inner">
+          <nav class="page-header__nav">
+            <div class="position">
+              <a href="" class="logo"><span class="logo-color">Web</span>Studio</a>
+              <button type="button" class="button__logo" data-mob-open>
+                <svg width="40" height="40" aria-label="mobile menu switch">
+                  <use class="icon-menu" href="./images/sprite.svg#iconmenu_open "></use>
+                </svg>
+              </button>
             </div>
+            <div class="page-header__menu" data-mob>
+              <div class="containers">
+                <ul class="page-header__list page-header__list--nav">
+                  <li class="page-header__item page-header__item--nav">
+                    <a class="page-header__link page-header__link--active" href="./index.html">Студия</a>
+                  </li>
+                  <li class="page-header__item page-header__item--nav">
+                    <a class="page-header__link " href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="page-header__item page-header__item--nav">
+                    <a class="page-header__link" href="">Контакты</a>
+                  </li>
+                </ul>
+                <div class="mob-menu-Link">
+                  <ul class="page-header__list page-header__list--mobile">
+                    <li class="page-header__item page-header__item--contact">
+                      <a href="tel:+380961111111" class="page-header__link page-header__link--tell">
+                        <svg class="page-header__icon--tell">
+                          <use href="./images/sprite.svg#iconsmartphone"></use>
+                        </svg>
+                        +38(096)111 11 11
+                      </a>
+                    </li>
+                    <li class="page-header__item page-header__item--contact">
+                      <a href="mailto:info@devstudio.com" class="page-header__link page-header__link--mail">
+                        <svg class="page-header__icon--mail">
+                          <use href="./images/sprite.svg#iconenvelope"></use>
+                        </svg>
+                        info@devstudio.com
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="page-header__list-social">
+                    <li class="page-header__item-social">
+                      <a class="social-border" href="">Instagram</a>
+                    </li>
+                    <li class="page-header__item-social">
+                      <a class="social-border" href="">Twitter</a>
+                    </li>
+                    <li class="page-header__item-social">
+                      <a class="social-border" href="">Facebook</a>
+                    </li>
+                    <li class="page-header__item-social">
+                      <a class="social-border" href="">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="button__logos" data-mob-close data-mobbtn>
+                  <svg width="40" height="40" aria-label="mobile menu switch">
+                    <use class="icon-cross" href="./images/sprite.svg#iconmenu_close"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="page-header__list page-header__list--contact ">
+                <li class="page-header__item page-header__item--contact">
+                  <a href="mailto:info@devstudio.com" class="page-header__link page-header__link--mail">
+                    <svg class="page-header__icon--mail">
+                      <use href="./images/sprite.svg#iconenvelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="page-header__item page-header__item--contact">
+                  <a href="tel:+380961111111" class="page-header__link page-header__link--tell">
+                    <svg class="page-header__icon--tell">
+                      <use href="./images/sprite.svg#iconsmartphone"></use>
+                    </svg>
+                    +38(096)111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
 
     <main>

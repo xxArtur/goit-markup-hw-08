@@ -614,9 +614,10 @@ summary {
 }
 @media screen and (max-width: 767px) {
   .page-header__menu.is-hidden {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     background-color: #ffffff;
     text-align: center;
@@ -639,16 +640,42 @@ summary {
   }
 }
 
+.containers {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 479px) {
+  .containers {
+    padding-left: calc(20px + 1vw);
+    padding-right: calc(20px + 1vw);
+  }
+}
+
+.mob-menu-Link {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__list--nav {
     padding-top: 48px;
     padding-left: 40px;
-    padding-bottom: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header__list--nav {
-    margin-left: 88px;
+    margin-left: 48px;
     padding-top: 32px;
   }
 }
