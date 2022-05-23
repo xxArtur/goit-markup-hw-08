@@ -2,11 +2,15 @@
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
-
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
 }
 
 .feature__title {

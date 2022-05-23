@@ -1006,10 +1006,16 @@ summary {
     padding-top: 94px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .feature {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1205,7 +1211,6 @@ summary {
 }
 
 .comanda__title {
-  margin-bottom: 50px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -1218,6 +1223,12 @@ summary {
   .comanda__title {
     font-size: 28px;
     line-height: 1.83;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comanda__title {
+    padding-bottom: 50px;
   }
 }
 
